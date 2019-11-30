@@ -20,8 +20,13 @@ MonoBehaviour:
     height: 997
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 7}
   m_MinSize: {x: 950, y: 300}
+=======
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 548}
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -73,8 +78,17 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 106
 --- !u!114 &4
+=======
+<<<<<<< HEAD
+  controlID: 39
+=======
+  controlID: 12
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+--- !u!114 &3
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,7 +188,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -243,7 +257,44 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 105
+=======
+<<<<<<< HEAD
+  controlID: 99
+=======
+  controlID: 13
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1531
+    height: 573
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
+  vertical: 0
+<<<<<<< HEAD
+  controlID: 100
+=======
+  controlID: 14
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,20 +387,48 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Prefabs/Enemy
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Prefabs/Enemy
+=======
+<<<<<<< HEAD
+    - Assets/Scripts/Game
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts/Game
+=======
+    - Assets/Scripts/Game/Enemy/Wave
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts/Game/Enemy/Wave
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\4hs13\Desktop\Runestrife
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 40280000
     m_LastClickedID: 10304
     m_ExpandedIDs: 000000005e260000e4260000fa2600003c270000fc280000
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: f8280000
+    m_LastClickedID: 10488
+    m_ExpandedIDs: 000000005a260000e026000038270000f828000000ca9a3b
+=======
+    m_SelectedIDs: 74290000
+    m_LastClickedID: 10612
+    m_ExpandedIDs: 000000006c260000f22600004a2700000a290000
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +456,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005e260000e42600003c270000fc280000
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000005a260000e026000038270000f8280000
+=======
+    m_ExpandedIDs: 000000006c260000f22600004a2700000a290000
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,9 +583,21 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: c8fbffffd4fbffffd6fbffffda2a0000042b0000
+=======
+<<<<<<< HEAD
+      m_SelectedIDs: ec2b0000
+      m_LastClickedID: 11244
+      m_ExpandedIDs: d6fbffff
+=======
+      m_SelectedIDs: 16240000
+      m_LastClickedID: 0
+      m_ExpandedIDs: cafbffff
+>>>>>>> 95fd72351807b5c90f0cb316f8e13828a2302900
+>>>>>>> 5a245fc1d923de5c22856689350c9a09b34144fb
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         if (!gameOver && enemySpawningOver)
         {
             // Check if there are no enemies left
-            if (waveNumber == 50) // if (EnemyManager.Instance.Enemies.Count == 0)
+            if (EnemyManager.Instance.Enemies.Count == 0)
             {
                 OnGameWin();
             }
@@ -63,8 +63,8 @@ public class GameManager : MonoBehaviour
         gameOver = true;
 
         AudioSource.PlayClipAtPoint(gameLoseSound, Camera.main.transform.position);
-        // EnemyManager.Instance.DestroyAllEnemies();
-        // WaveManager.Instance.StopSpawning();
+        EnemyManager.Instance.DestroyAllEnemies();
+        WaveManager.Instance.StopSpawning();
     }
 
     public void RetryLevel()
