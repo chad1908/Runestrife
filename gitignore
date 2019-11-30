@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 #Stuff since Git sucks
 *.dwlt
+*.lock
