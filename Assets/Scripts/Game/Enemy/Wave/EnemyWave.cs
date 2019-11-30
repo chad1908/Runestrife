@@ -5,7 +5,7 @@ using System;
 
 //1
 [Serializable]
-public class EnemyWave : MonoBehaviour
+public class EnemyWave
 {
     //2
     public int pathIndex;
