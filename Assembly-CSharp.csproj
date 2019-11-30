@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Game\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Game\Enemy\Wave\EnemyWave.cs" />
-    <Compile Include="Assets\Scripts\Game\Enemy\Wave\Wave Manager.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\Wave\WaveManager.cs" />
     <Compile Include="Assets\Scripts\Game\Enemy\Waypoints\WayPointManager.cs" />
     <Compile Include="Assets\Scripts\Game\GameManager.cs" />
     <Compile Include="Assets\Scripts\Game\UI\EnemyHealthBar.cs" />
