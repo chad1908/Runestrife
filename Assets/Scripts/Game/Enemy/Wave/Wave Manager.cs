@@ -11,6 +11,8 @@ public class WaveManager : MonoBehaviour
     //3
     private float elapsedTime = 0f;
     //4
+    private EnemyWave activeWave;
+    //5
     private float spawnCounter = 0f;
     //6
     private List<EnemyWave> activatedWaves = new List<EnemyWave>();
@@ -23,7 +25,7 @@ public class WaveManager : MonoBehaviour
     //2
     void Update()
     {
-        elapsedTime += elapsedTime.deltaTime;
+        elapsedTime += Time.deltaTime;
 
         SearchForWave();
         UpdateActiveWave();
@@ -51,31 +53,31 @@ public class WaveManager : MonoBehaviour
     private void UpdateActiveWave()
     {
         //1
-        if (activatedWaves != null)
+        if (activeWave != null)
         {
             spawnCounter += Time.deltaTime;
             //2
-            if (spawnCounter >= activeWave.timeBetweenSpawnsInSeconds)
+            if (spawnCounter >= activeWave.timeBetweenSpawnInSeconds)
             {
                 spawnCounter = 0f;
 
                 //3
-                if (activeWave.listOfEniemies.Count != 0)
+                if (activeWave.listOfEnemies.Count != 0)
                 {
                     GameObject enemy = (GameObject)Instantiate(
                         activeWave.listOfEnemies[0], WayPointManager.Instance.
-                        GetSpawnPosition(UpdateActiveWave.pathIndex), Quaternion.identity);
+                        GetSpawnPosition(activeWave.pathIndex), Quaternion.identity);
                     //5
-                    enemy.GetComponent<Enemy>().pathIndex = UpdateActiveWave.pathIndex;
+                    enemy.GetComponent<Enemy>().pathIndex = activeWave.pathIndex;
                     //6
-                    UpdateActiveWave.listOfEnemies.RemoveAt(0);
+                    activeWave.listOfEnemies.RemoveAt(0); 
                 }
                 else
                 {
                     //7
                     activeWave = null;
                     //8
-                    if (activedWaves.Count == enemyWaves.Count)
+                    if (activatedWaves.Count == enemyWaves.Count)
                     {
                         //all waves are over
                     }
@@ -90,6 +92,6 @@ public class WaveManager : MonoBehaviour
         spawnCounter = 0;
         activeWave = null;
         activatedWaves.Clear();
-        enable = false;
+        enabled = false;
     }
 }
