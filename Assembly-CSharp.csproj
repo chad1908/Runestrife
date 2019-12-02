@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Game\Enemy\Wave\WaveManager.cs" />
     <Compile Include="Assets\Scripts\Game\Enemy\Waypoints\WayPointManager.cs" />
     <Compile Include="Assets\Scripts\Game\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Tower\Weapons\FollowingProjectile.cs" />
     <Compile Include="Assets\Scripts\Game\UI\EnemyHealthBar.cs" />
     <Compile Include="Assets\Scripts\Title Screen\TitleManager.cs" />
     <Compile Include="Assets\Scripts\Utility\AutoScaler.cs" />
