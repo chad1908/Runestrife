@@ -37,6 +37,22 @@ public static class UtilityMethods
         Vector2 screenPoint = Camera.main.WorldToScreenPoint(worldPosition);
         rectTransform.position = screenPoint;
 
+    }
 
+    //takes 2 parameters, Transform which has to be rotated and the position where it wants to look
+    public static Quaternion SmoothlyLook(Transform fromTransform, Vector3 toVector3)
+    {
+        //this check makes sure that the method stops executing if the origin point and destination are the same
+        if (fromTransform.position == toVector3)
+        {
+            return fromTransform.localRotation;
+        }
+
+        //this blocks stores the current rotation and creates the target rotation
+        Quaternion currentRotation = fromTransform.localRotation;
+        Quaternion targetRotation = Quaternion.LookRotation(toVector3 - fromTransform.position);
+
+        //this is the actual mthod that makes the rotation interpolate
+        return Quaternion.Slerp(currentRotation, targetRotation, Time.deltaTime * 10f);
     }
 }

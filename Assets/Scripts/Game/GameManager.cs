@@ -26,10 +26,10 @@ public class GameManager : MonoBehaviour
         if (!gameOver && enemySpawningOver)
         {
             // Check if there are no enemies left
-            if (EnemyManager.Instance.Enemies.Count == 0)
-            {
-                OnGameWin();
-            }
+            //if (EnemyManager.Instance.Enemies.Count == 0)
+            //{
+            //    OnGameWin();
+            //}
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         gameOver = true;
 
         AudioSource.PlayClipAtPoint(gameLoseSound, Camera.main.transform.position);
-        EnemyManager.Instance.DestroyAllEnemies();
+        //EnemyManager.Instance.DestroyAllEnemies();
         WaveManager.Instance.StopSpawning();
     }
 
