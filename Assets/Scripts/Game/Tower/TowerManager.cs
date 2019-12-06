@@ -7,7 +7,7 @@ using System.Linq;
 [Serializable]
 public struct TowerCost
 {
-    //public TowerType TowerType; //--------------------------------Waiting on Asher's part to finish
+    public TowerType TowerType;
     public int Cost;
 }
 
@@ -31,49 +31,30 @@ public class TowerManager : MonoBehaviour
     }
 
     //Accepts a tower slot and a type of tower as parameters, and creates a new copy of the chosen tower at the position of the tower slot
-    //public void CreateNewTower(GameObject slotToFill, TowerType towerType) //--------------------------------Waiting on Asher's part to finish
-    //{
-    //    switch (towerType)
-    //    {
-    //        case towerType.Stone:
-    //            Instantiate(stoneTowerPrefab, slotToFill.transform.position, Quaternion.identity);
-    //            slotToFill.gameObject.SetActive(false);
-    //            break;
-    //        case towerType.Fire:
-    //            Instantiate(fireTowerPrefab, slotToFill.transform.position, Quaternion.identity);
-    //            slotToFill.gameObject.SetActive(false);
-    //            break;
-    //        case towerType.Ice:
-    //            Instantiate(iceTowerPrefab, slotToFill.transform.position, Quaternion.identity);
-    //            slotToFill.gameObject.SetActive(false);
-    //            break;
-    //    }
-    //}
-
     public void CreateNewTower(GameObject slotToFill, TowerType towerType) //--------------------------------Waiting on Asher's part to finish
     {
-        //switch (towerType)
-        //{
-        //    case towerType.Stone:
-        //        Instantiate(stoneTowerPrefab, slotToFill.transform.position, Quaternion.identity);
-        //        slotToFill.gameObject.SetActive(false);
-        //        break;
-        //    case towerType.Fire:
-        //        Instantiate(fireTowerPrefab, slotToFill.transform.position, Quaternion.identity);
-        //        slotToFill.gameObject.SetActive(false);
-        //        break;
-        //    case towerType.Ice:
-        //        Instantiate(iceTowerPrefab, slotToFill.transform.position, Quaternion.identity);
-        //        slotToFill.gameObject.SetActive(false);
-        //        break;
-        //}
+        switch (towerType)
+        {
+            case TowerType.Stone:
+                Instantiate(stoneTowerPrefab, slotToFill.transform.position, Quaternion.identity);
+                slotToFill.gameObject.SetActive(false);
+                break;
+            case TowerType.Fire:
+                Instantiate(fireTowerPrefab, slotToFill.transform.position, Quaternion.identity);
+                slotToFill.gameObject.SetActive(false);
+                break;
+            case TowerType.Ice:
+                Instantiate(iceTowerPrefab, slotToFill.transform.position, Quaternion.identity);
+                slotToFill.gameObject.SetActive(false);
+                break;
+        }
     }
 
     //a LINQ utility method to easily get the price of a tower type
-    //public int GetTowerPrice(TowerType towerType) //--------------------------------Waiting on Asher's part to finish
-    //{
-    //    return (from towerCost in TowerCosts
-    //            where towerCost.TowerType == towerType
-    //            select towerCost.Cost).FirstOrDefault();
-    //}
+    public int GetTowerPrice(TowerType towerType) //--------------------------------Waiting on Asher's part to finish
+    {
+        return (from towerCost in TowerCosts
+                where towerCost.TowerType == towerType
+                select towerCost.Cost).FirstOrDefault();
+    }
 }
