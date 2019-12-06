@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections.Generic;
 
 public enum TowerType
 {
@@ -130,7 +129,7 @@ public class Tower : MonoBehaviour
         towerLevel++;
 
         //Calculate new stats for this tower
-        attackPower += 2;
+        attackPower *= 2;
         timeBetweenAttacksInSeconds *= 0.7f;
         aggroRadius *= 1.20f;
     }

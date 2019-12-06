@@ -13,5 +13,8 @@ public class StoneTower : Tower
         //3
         GameObject stone = (GameObject)Instantiate(stonePrefab,
             towerPieceToAim.position, Quaternion.identity);
+
+        stone.GetComponent<Stone>().enemyToFollow = targetEnemy;
+        stone.GetComponent<Stone>().damage = attackPower;
     }
 }

@@ -31,7 +31,6 @@ public class TowerManager : MonoBehaviour
     }
 
     //Accepts a tower slot and a type of tower as parameters, and creates a new copy of the chosen tower at the position of the tower slot
-<<<<<<< HEAD
     //public void CreateNewTower(GameObject slotToFill, TowerType towerType) //--------------------------------Waiting on Asher's part to finish
     //{
     //    switch (towerType)
@@ -50,7 +49,7 @@ public class TowerManager : MonoBehaviour
     //            break;
     //    }
     //}
-=======
+
     public void CreateNewTower(GameObject slotToFill, TowerType towerType) //--------------------------------Waiting on Asher's part to finish
     {
         //switch (towerType)
@@ -69,7 +68,6 @@ public class TowerManager : MonoBehaviour
         //        break;
         //}
     }
->>>>>>> 9265e85bf02c418c09179a6e42115349f65d9203
 
     //a LINQ utility method to easily get the price of a tower type
     //public int GetTowerPrice(TowerType towerType) //--------------------------------Waiting on Asher's part to finish
