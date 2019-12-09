@@ -25,14 +25,4 @@ public class AddTowerWindow : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-
-    void Start()
-    {
-        
-    }
-    
-    void Update()
-    {
-        
-    }
 }
