@@ -45,6 +45,10 @@ public class WaveManager : MonoBehaviour
                 activatedWaves.Add(enemyWave);
                 spawnCounter = 0f;
                 //6
+
+                // Display current wave
+                UIManager.Instance.ShowCenterWindow("Wave " + GameManager.Instance.waveNumber);
+
                 break;
             }
         }

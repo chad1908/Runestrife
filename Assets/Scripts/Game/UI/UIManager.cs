@@ -22,6 +22,9 @@ public class UIManager : MonoBehaviour
     public GameObject loseGameWindow;
     public GameObject blackBackground;
     //----------------------------------------------------------------------------------------------------------------
+    
+    // Used in opening and closing the center window UI element for informing player of their current wave
+    public GameObject centerWindow;
 
     // Set instance to the UIManager script
     void Awake()
@@ -74,4 +77,23 @@ public class UIManager : MonoBehaviour
         healthBar.GetComponent<EnemyHealthBar>().enemy = enemy;
     }
     //--------------------------------------------------------------------------------------------------------------------
+
+    // Center Window Methods, used for displaying current wave
+    public void ShowCenterWindow(string text)
+    {
+        centerWindow.transform.Find("TxtWave").GetComponent<Text>().text = text;
+        StartCoroutine(EnableAndDisableCenterWindow());
+    }
+
+    private IEnumerator EnableAndDisableCenterWindow()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            yield return new WaitForSeconds(.4f);
+            centerWindow.SetActive(true);
+
+            yield return new WaitForSeconds(.4f);
+            centerWindow.SetActive(false);
+        }
+    }
 }
