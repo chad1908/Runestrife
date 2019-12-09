@@ -14,6 +14,15 @@ public class UIManager : MonoBehaviour
     public Text txtWave;
     public Text txtEscapedEnemies;
 
+    public Transform enemyHealthBars;
+    public GameObject enemyHealthBarPrefab;
+
+    //this bit of code goes underneath GameObject towerInfoWindow; ---------------------------------------------------
+    public GameObject winGameWindow;
+    public GameObject loseGameWindow;
+    public GameObject blackBackground;
+    //----------------------------------------------------------------------------------------------------------------
+
     // Set instance to the UIManager script
     void Awake()
     {
@@ -40,4 +49,29 @@ public class UIManager : MonoBehaviour
     {
         UpdateTopBar();
     }
+
+    // these methods goes underneath ShowTowerInfoWindow() method ---------------------------------------------------------
+    public void ShowWinScreen()
+    {
+        blackBackground.SetActive(true);
+        winGameWindow.SetActive(true);
+    }
+
+    public void ShowLoseScreen()
+    {
+        blackBackground.SetActive(true);
+        loseGameWindow.SetActive(true);
+    }
+
+    // accepts the enemy that needs a health bar as it's sole parameter
+    public void CreateHealthBarForEnemy(Enemy enemy)
+    {
+        // create a new health bar
+        GameObject healthBar = Instantiate(enemyHealthBarPrefab);
+        // parent the new health bar to EnemyHealthBars
+        healthBar.transform.SetParent(enemyHealthBars, false);
+        // pass teh enemy reference to the health bar
+        healthBar.GetComponent<EnemyHealthBar>().enemy = enemy;
+    }
+    //--------------------------------------------------------------------------------------------------------------------
 }
