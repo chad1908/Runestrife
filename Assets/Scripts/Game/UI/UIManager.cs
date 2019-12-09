@@ -27,6 +27,9 @@ public class UIManager : MonoBehaviour
     // Used in opening and closing the center window UI element for informing player of their current wave
     public GameObject centerWindow;
 
+    // Used in displaying a red border to indicate an enemy has escaped
+    public GameObject damageCanvas;
+
     // Set instance to the UIManager script
     void Awake()
     {
@@ -103,6 +106,23 @@ public class UIManager : MonoBehaviour
 
             yield return new WaitForSeconds(.4f);
             centerWindow.SetActive(false);
+        }
+    }
+
+    // Used in the damage canvas for displaying a red border when and enemy escapes
+    public void ShowDamage()
+    {
+        StartCoroutine(DoDamageAnimation());
+    }
+
+    private IEnumerator DoDamageAnimation()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            yield return new WaitForSeconds(.1f);
+            damageCanvas.SetActive(true);
+            yield return new WaitForSeconds(.1f);
+            damageCanvas.SetActive(false);
         }
     }
 }
