@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Game\Tower\TowerManager.cs" />
     <Compile Include="Assets\Scripts\Game\Tower\Weapons\FollowingProjectile.cs" />
     <Compile Include="Assets\Scripts\Game\Tower\Weapons\Stone.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\AddTowerWindow.cs" />
     <Compile Include="Assets\Scripts\Game\UI\EnemyHealthBar.cs" />
     <Compile Include="Assets\Scripts\Title Screen\TitleManager.cs" />
     <Compile Include="Assets\Scripts\Utility\AutoScaler.cs" />
