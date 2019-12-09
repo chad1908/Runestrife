@@ -47,7 +47,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
+<<<<<<< HEAD
   controlID: 77
+=======
+  controlID: 57
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +130,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,7 +222,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 78
+=======
+  controlID: 58
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +251,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 31
+=======
+  controlID: 59
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,19 +348,32 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scripts/Game/UI
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scripts/Game/UI
+=======
+    - Assets/Prefabs/Tower
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Prefabs/Tower
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\0ju20\GAME312\Runestrife
+  m_LastProjectPath: C:\Users\8wz96\Desktop\Runestrif\Runestrife
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 15}
+<<<<<<< HEAD
     m_SelectedIDs: 7c2d0000
     m_LastClickedID: 11644
+=======
+    m_SelectedIDs: 582e0000
+    m_LastClickedID: 11864
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
     m_ExpandedIDs: 000000004c2c0000ea2c00002a2d0000582e0000e62e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -496,9 +521,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 62f8ffffc6300000f0300000
+=======
+      m_SelectedIDs: 80300000
+      m_LastClickedID: 12416
+      m_ExpandedIDs: 62f8ffffc6300000d2300000f030000044320000
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -521,7 +552,11 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
   m_WindowGUID: 31fa8ffd6b754124b92e3562d8559324
+=======
+  m_WindowGUID: e31a8c1c30d4b174bb7e577ada109542
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -548,7 +583,11 @@ MonoBehaviour:
     width: 1148
     height: 553
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
   m_WindowGUID: 54f96724d1c95b044b2d8d1506b09760
+=======
+  m_WindowGUID: 67c4669e436d53245a4b1677b883a8b9
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
@@ -588,9 +627,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: 9.979751
+    speed: 2
+    m_Value: 9.979751
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -703,8 +748,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 646
     width: 1529
     height: 354
+=======
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
+>>>>>>> 1bfe623061ccd56159860eda9f810e0b737c3670
   m_PersistentViewDataDictionary: {fileID: 0}
