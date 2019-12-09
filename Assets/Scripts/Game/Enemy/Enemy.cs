@@ -32,6 +32,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    // Variables for use with Ice Tower
+    public float timeEnemyStaysFrozenInSeconds = 2f;    // Freeze Duration in seconds
+    public bool frozen;                                 // Keeps track of whether enemy is frozen
+    private float freezeTimer;                          // Counts how long enemy has been frozen, later compared to freeze duration
+
+    // Standard Enemy Variables
     public float maxHealth = 100f;
     public float health = 100f;
     public float moveSpeed = 3f;
@@ -77,6 +83,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void Freeze()
+    {
+        if (!frozen) // If the enemy isn't already frozen, classify them as frozen and halve their movespeed
+        {
+            frozen = true;
+            moveSpeed /= 2;
+        }
+    }
+
+    void Defrost()
+    {
+        // Defrosts the enemy, classifying them as not frozen, resetting the frozen boolean, and doubling their movespeed back to it's original value.
+        freezeTimer = 0f;
+        frozen = false;
+        moveSpeed *= 2;
+    }
+
     void Update()
     {
         //While there’s still waypoints left, update the movement.
@@ -88,6 +111,15 @@ public class Enemy : MonoBehaviour
         else
         { // No more waypoints, so call OnGotToLastWayPoint().
             OnGotToLastWayPoint();
+        }
+
+        if (frozen)
+        {
+            freezeTimer += Time.deltaTime;
+            if (freezeTimer >= timeEnemyStaysFrozenInSeconds)
+            {
+                Defrost();
+            }
         }
     }
     private void UpdateMovement()
