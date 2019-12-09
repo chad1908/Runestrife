@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance;
     // reference to the AddTowerWindow component
     public GameObject addTowerWindow;
+    public GameObject towerInfoWindow;
     // References to the Text components of the TopBar
     public Text txtGold;
     public Text txtWave;
@@ -48,6 +49,14 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         UpdateTopBar();
+    }
+
+    public void ShowTowerInfoWindow(Tower tower)
+    {
+        towerInfoWindow.GetComponent<TowerInfoWindow>().tower = tower;
+        towerInfoWindow.SetActive(true);
+        UtilityMethods.MoveUiElementToWorldPosition(towerInfoWindow.
+        GetComponent<RectTransform>(), tower.transform.position);
     }
 
     // these methods goes underneath ShowTowerInfoWindow() method ---------------------------------------------------------
