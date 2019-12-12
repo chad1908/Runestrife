@@ -652,6 +652,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{E1B70A50-34ED-71AE-5533-C6968DD4C981}</Project>      <Name>SteamVR_Actions</Name>    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{AA0F4493-FA24-A500-F19D-4A2B1AE0BC74}</Project>      <Name>SteamVR_Input_Editor</Name>    </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
@@ -660,8 +662,6 @@
       <Project>{17E9D144-DE7F-6A4C-69EE-5D05D2F1AF16}</Project>      <Name>SteamVR</Name>    </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{45D345F5-45F2-CFBE-8B01-07670DA47E20}</Project>      <Name>SteamVR_Windows_EditorHelper</Name>    </ProjectReference>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{E1B70A50-34ED-71AE-5533-C6968DD4C981}</Project>      <Name>SteamVR_Actions</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -31,11 +31,29 @@ using UnityEngine;
 
 public static class UtilityMethods
 {
+    private static void ScaleRectTransformBasedOnDistanceFromCamera
+    (RectTransform rectTransform)
+    {
+        //2
+        float distance = Vector3.Distance(Camera.main.transform.
+        position, rectTransform.position);
+        //3
+        rectTransform.localScale = new Vector3(distance /
+        UIManager.vrUiScaleDivider, distance
+        / UIManager.vrUiScaleDivider, 1f);
+    }
+
     // Helper method for positioning UI elements to world objects
     public static void MoveUiElementToWorldPosition(RectTransform rectTransform, Vector3 worldPosition)
     {
-        Vector2 screenPoint = Camera.main.WorldToScreenPoint(worldPosition);
-        rectTransform.position = screenPoint;
+        //1
+        rectTransform.position = worldPosition + new Vector3(0, 3);
+        //2
+        // Needed to rotate UI the right way
+        rectTransform.LookAt(Camera.main.transform.position +
+        Camera.main.transform.forward * 10000);
+        //3
+        ScaleRectTransformBasedOnDistanceFromCamera(rectTransform);
     }
 
     // 1
